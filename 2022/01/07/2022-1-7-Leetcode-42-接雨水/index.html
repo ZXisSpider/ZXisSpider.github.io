@@ -20,28 +20,30 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"zxisspider.github.io","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.8.2","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
-<meta name="description" content="用github上传项目  12345git initgit add .git commit -m &quot;adding files&quot;git remote add origin https:&#x2F;&#x2F;github.com&#x2F;yourusername&#x2F;your-repo-name.gitgit push -u origin master      github 网络问题解决方法  12git">
+<meta name="description" content="给定 n 个非负整数表示每个宽度为 1 的柱子的高度图，计算按此排列的柱子，下雨之后能接多少雨水。   123输入：height &#x3D; [0,1,0,2,1,0,1,3,2,1,2,1]输出：6解释：上面是由数组 [0,1,0,2,1,0,1,3,2,1,2,1] 表示的高度图，在这种情况下，可以接 6 个单位的雨水（蓝色部分表示雨水）。     思路：对每一个坐标i，要确定两件事：  坐标左边最大">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Github 用法">
-<meta property="og:url" content="http://zxisspider.github.io/2021/12/16/Github-%E7%94%A8%E6%B3%95/index.html">
+<meta property="og:title" content="Leetcode 42 接雨水">
+<meta property="og:url" content="http://zxisspider.github.io/2022/01/07/2022-1-7-Leetcode-42-%E6%8E%A5%E9%9B%A8%E6%B0%B4/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="用github上传项目  12345git initgit add .git commit -m &quot;adding files&quot;git remote add origin https:&#x2F;&#x2F;github.com&#x2F;yourusername&#x2F;your-repo-name.gitgit push -u origin master      github 网络问题解决方法  12git">
+<meta property="og:description" content="给定 n 个非负整数表示每个宽度为 1 的柱子的高度图，计算按此排列的柱子，下雨之后能接多少雨水。   123输入：height &#x3D; [0,1,0,2,1,0,1,3,2,1,2,1]输出：6解释：上面是由数组 [0,1,0,2,1,0,1,3,2,1,2,1] 表示的高度图，在这种情况下，可以接 6 个单位的雨水（蓝色部分表示雨水）。     思路：对每一个坐标i，要确定两件事：  坐标左边最大">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2021-12-16T09:45:42.000Z">
-<meta property="article:modified_time" content="2022-01-07T13:49:30.003Z">
+<meta property="og:image" content="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2018/10/22/rainwatertrap.png">
+<meta property="article:published_time" content="2022-01-07T13:45:42.000Z">
+<meta property="article:modified_time" content="2022-01-07T15:48:26.500Z">
 <meta property="article:author" content="Zhou Xiang">
-<meta property="article:tag" content="技术文档">
+<meta property="article:tag" content="刷题之路">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2018/10/22/rainwatertrap.png">
 
 
-<link rel="canonical" href="http://zxisspider.github.io/2021/12/16/Github-%E7%94%A8%E6%B3%95/">
+<link rel="canonical" href="http://zxisspider.github.io/2022/01/07/2022-1-7-Leetcode-42-%E6%8E%A5%E9%9B%A8%E6%B0%B4/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://zxisspider.github.io/2021/12/16/Github-%E7%94%A8%E6%B3%95/","path":"2021/12/16/Github-用法/","title":"Github 用法"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://zxisspider.github.io/2022/01/07/2022-1-7-Leetcode-42-%E6%8E%A5%E9%9B%A8%E6%B0%B4/","path":"2022/01/07/2022-1-7-Leetcode-42-接雨水/","title":"Leetcode 42 接雨水"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>Github 用法 | Hexo</title>
+<title>Leetcode 42 接雨水 | Hexo</title>
   
 
 
@@ -106,7 +108,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -119,6 +121,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%80%9D%E8%B7%AF%EF%BC%9A"><span class="nav-number">1.</span> <span class="nav-text">思路：</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -181,7 +184,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://zxisspider.github.io/2021/12/16/Github-%E7%94%A8%E6%B3%95/">
+    <link itemprop="mainEntityOfPage" href="http://zxisspider.github.io/2022/01/07/2022-1-7-Leetcode-42-%E6%8E%A5%E9%9B%A8%E6%B0%B4/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -194,7 +197,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Github 用法
+          Leetcode 42 接雨水
         </h1>
 
         <div class="post-meta-container">
@@ -204,15 +207,9 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">发表于</span>
+      
 
-      <time title="创建时间：2021-12-16 17:45:42" itemprop="dateCreated datePublished" datetime="2021-12-16T17:45:42+08:00">2021-12-16</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2022-01-07 21:49:30" itemprop="dateModified" datetime="2022-01-07T21:49:30+08:00">2022-01-07</time>
+      <time title="创建时间：2022-01-07 21:45:42 / 修改时间：23:48:26" itemprop="dateCreated datePublished" datetime="2022-01-07T21:45:42+08:00">2022-01-07</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -234,18 +231,26 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <ul>
-<li>用github上传项目</li>
-</ul>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br><span class="line">git add .</span><br><span class="line">git commit -m &quot;adding files&quot;</span><br><span class="line">git remote add origin https://github.com/yourusername/your-repo-name.git</span><br><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure>
+        <p>给定 <code>n</code> 个非负整数表示每个宽度为 <code>1</code> 的柱子的高度图，计算按此排列的柱子，下雨之后能接多少雨水。</p>
+<img src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2018/10/22/rainwatertrap.png" alt="img" style="zoom:100%;" />
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">输入：height = [0,1,0,2,1,0,1,3,2,1,2,1]</span><br><span class="line">输出：6</span><br><span class="line">解释：上面是由数组 [0,1,0,2,1,0,1,3,2,1,2,1] 表示的高度图，在这种情况下，可以接 6 个单位的雨水（蓝色部分表示雨水）。 </span><br></pre></td></tr></table></figure>
 
 
 
-
+<h2 id="思路："><a href="#思路：" class="headerlink" title="思路："></a>思路：</h2><p>对每一个坐标i，要确定两件事：</p>
 <ul>
-<li>github 网络问题解决方法</li>
+<li>坐标左边最大的高度maxLeft</li>
+<li>坐标右边最大的高度maxRight</li>
 </ul>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global --unset http.proxy</span><br><span class="line">git config --global --unset https.proxy</span><br></pre></td></tr></table></figure>
+<p>确定好两个最大高度后，求解坐标i能接的雨水即为：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">min</span>(maxLeft, maxRight) - height[i]?<span class="built_in">min</span>(maxLeft, maxRight) - height[i]:<span class="number">0</span></span><br></pre></td></tr></table></figure>
+
+<p>这实际上是坐标左右两端最高的柱子中，更小的那一个的高度减去当前正在计算坐标的高度</p>
+<p>为了尽量减少空间复杂度，我们设置双指针分别为leftP与rightP</p>
+<p>在遍历中，当$maxLeft &lt; maxRight$的时候，实际上是$maxLeft &lt; maxRight_{lowerBound}$</p>
+<p>因此我们知道左边是更小的，所以先处理左边的格子</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">trap</span>(<span class="params">self, height: <span class="type">List</span>[<span class="built_in">int</span>]</span>) -&gt; <span class="built_in">int</span>:</span></span><br><span class="line">        maxLeft = height[<span class="number">0</span>]</span><br><span class="line">        maxRight = height[-<span class="number">1</span>]   </span><br><span class="line">        leftP = <span class="number">1</span></span><br><span class="line">        rightP = <span class="built_in">len</span>(height)-<span class="number">2</span> </span><br><span class="line">        <span class="built_in">sum</span> = <span class="number">0</span></span><br><span class="line">        <span class="keyword">while</span> leftP &lt;= rightP:</span><br><span class="line">            <span class="keyword">if</span> maxLeft &lt; maxRight:</span><br><span class="line">                <span class="keyword">if</span> maxLeft &gt; height[leftP]:</span><br><span class="line">                    <span class="built_in">sum</span> += maxLeft - height[leftP]</span><br><span class="line">                leftP += <span class="number">1</span></span><br><span class="line">                maxLeft = <span class="built_in">max</span>(height[leftP-<span class="number">1</span>], maxLeft)</span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                <span class="keyword">if</span> maxRight &gt; height[rightP]:</span><br><span class="line">                    <span class="built_in">sum</span> += maxRight - height[rightP]</span><br><span class="line">                rightP -= <span class="number">1</span></span><br><span class="line">                maxRight = <span class="built_in">max</span>(height[rightP+<span class="number">1</span>], maxRight)</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">sum</span></span><br></pre></td></tr></table></figure>
 
 
     </div>
@@ -256,21 +261,18 @@
 
     <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/%E6%8A%80%E6%9C%AF%E6%96%87%E6%A1%A3/" rel="tag"># 技术文档</a>
+              <a href="/tags/%E5%88%B7%E9%A2%98%E4%B9%8B%E8%B7%AF/" rel="tag"># 刷题之路</a>
           </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2021/12/16/%E3%80%8A%E7%BD%AE%E8%BA%AB%E4%BA%8B%E5%86%85%E3%80%8B%E4%B9%A6%E8%AF%84/" rel="prev" title="《置身事内》书评">
-                  <i class="fa fa-chevron-left"></i> 《置身事内》书评
+                <a href="/2021/12/27/2021-12-19-%E3%80%8A21%E4%B8%96%E7%BA%AA%E8%B5%84%E6%9C%AC%E8%AE%BA%E3%80%8B%E8%AF%BB%E5%90%8E/" rel="prev" title="《21世纪资本论》读后">
+                  <i class="fa fa-chevron-left"></i> 《21世纪资本论》读后
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2021/12/19/%E6%97%A0%E5%9B%BD%E7%95%8C%E7%9A%84%E7%A7%91%E5%AD%A6%E4%B8%8E%E6%9C%89%E5%9B%BD%E7%95%8C%E7%9A%84%E7%A7%91%E5%AD%A6%E5%AE%B6/" rel="next" title="无国界的科学与有国界的科学家">
-                  无国界的科学与有国界的科学家 <i class="fa fa-chevron-right"></i>
-                </a>
             </div>
           </div>
     </footer>
