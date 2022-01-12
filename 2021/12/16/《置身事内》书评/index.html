@@ -295,5 +295,36 @@
 
 
 
+  
+  <script type="text/x-mathjax-config">
+	MathJax.Hub.Config({
+		//下面的HTML-CSS和SVG用于在小屏幕上，数学公式可以自动换行，我测试过后发现无效，但是貌似有人可以。
+		"HTML-CSS": { 
+			linebreaks: { 
+				automatic: true 
+			} 
+		},SVG: {
+			linebreaks: { 
+				automatic: true 
+			}
+		},menuSettings: {
+			zoom: "None"
+		},
+		showMathMenu: false,
+		jax: ["input/TeX","output/CommonHTML"],
+		extensions: ["tex2jax.js"],
+		TeX: {
+			extensions: ["AMSmath.js","AMSsymbols.js"],
+			equationNumbers: {
+				autoNumber: "AMS"
+			}
+		},tex2jax: {
+			inlineMath: [["\\(", "\\)"]],
+			displayMath: [["\\[", "\\]"]]
+		}
+	});
+	</script>
+	<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
 </body>
 </html>
